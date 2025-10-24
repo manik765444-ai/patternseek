@@ -1,0 +1,22 @@
+[package]
+name = "patternseek"
+version = "0.1.0"
+edition = "2021"
+authors = ["Your Name"]
+description = "A Rust-based grep clone"
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+clap = "4.2.0"
+atty = "0.2.14"
+regex = "1.7.1"
+thiserror = "1.0.40"
+
+[dev-dependencies]
+tokio = { version = "1.26.0", features = ["full"] }
+```
+
+```toml
+[[bin]]
+name = "patternseek"
+path = "src/main.rs"
